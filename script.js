@@ -33,6 +33,18 @@ let playerScoreNumber = 0;
 let computerScoreNumber = 0;
 let computerChoice = "";
 
+// Reset Score and Player Choice / Computer Choice
+function resetAll() {
+  playerScoreNumber = 0;
+  computerScoreNumber = 0;
+  playerScoreEl.textContent = playerScoreNumber;
+  computerScoreEl.textContent = computerScoreNumber;
+  playerChoiceEl.textContent = "";
+  computerChoiceEl.textContent = "";
+  resultText.textContent = "";
+  resetSelected();
+}
+
 // Reset all selected icons
 function resetSelected() {
   allGameIcons.forEach((icon) => {
@@ -141,3 +153,6 @@ function select(playerChoice) {
       break;
   }
 }
+
+// On startup essential values
+resetAll();
