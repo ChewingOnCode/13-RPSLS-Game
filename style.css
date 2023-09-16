@@ -35,6 +35,10 @@ body {
   border-top-right-radius: 5px;
 }
 
+.selected {
+  color: #222 !important;
+}
+
 h1 {
   color: white;
   font-size: 30px;
